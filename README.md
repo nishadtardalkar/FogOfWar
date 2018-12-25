@@ -6,7 +6,7 @@ A plugin for Unity3D to add Fog of War to a game.
 <br>
 <b>Steps to use plugin</b><br>
 <ol>
-  <li>Copy all contents of this repository in your Project</li>
+  <li>Copy all contents of this repository in your Assets</li>
   <li>Add "Prefabs/Fog" to your scene</li>
   <li>Drag gameobject from scene that has to defog the area to "Center" slot in the added Fog object</li>
   <li>Add "Scripts/PreRenderCalls" to your rendering camera</li>
