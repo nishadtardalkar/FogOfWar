@@ -2,6 +2,12 @@
 A plugin for Unity3D to add Fog of War to a game.
 
 <b>
+UPDATE 1.3 : <br>
+Added an option to keep the cleared area of the unfoged. <br>
+(Please test this and create an issue of you find any errors)
+</b>
+<br>
+<b>
 UPDATE 1.2 : <br>
 Added a feature for multiple targets to uncover fog.
 </b>
