@@ -6,12 +6,12 @@ UPDATE 1.3 : <br>
 Added an option to keep the cleared area of the unfoged. <br>
 (Please test this and create an issue of you find any errors)
 </b>
-<br>
+<br> <br>
 <b>
 UPDATE 1.2 : <br>
 Added a feature for multiple targets to uncover fog.
 </b>
-<br>
+<br> <br>
 <b>
 UPDATE 1.1 : <br>
 Supports SRP, please check the scene in the unitypackage to see how to setup in HDRP. (Same case with your own SRP)
