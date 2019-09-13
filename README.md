@@ -2,7 +2,12 @@
 A plugin for Unity3D to add Fog of War to a game.
 
 <b>
-UPDATE : <br>
+UPDATE 1.2 : <br>
+Added a feature for multiple targets to uncover fog.
+  </b>
+
+<b>
+UPDATE 1.1 : <br>
 Supports SRP, please check the scene in the unitypackage to see how to setup in HDRP. (Same case with your own SRP)
   </b>
   
