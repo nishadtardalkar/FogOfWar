@@ -30,7 +30,8 @@
 
 			sampler2D _RecurringCookie;
 			float _Data[259];
-			float _Index;
+			int _Index;
+			int _KeepUnfoged;
 
             v2f vert (appdata v)
             {
@@ -77,11 +78,18 @@
 				float dist = (pow(pow(i.uv[0] - _Data[1], 2) + pow(i.uv[1] - _Data[2], 2), 0.5));
 				if (dist > value)
 				{
-					if (_Index > 0) 
+					if (_KeepUnfoged == 0)
+					{
+						if (_Index > 0)
+						{
+							return tex2D(_RecurringCookie, i.uv);
+						}
+						return float4(0.05, 0.05, 0.05, 1);
+					}
+					else 
 					{
 						return tex2D(_RecurringCookie, i.uv);
 					}
-					return float4(0.05, 0.05, 0.05, 1);
 				}
 				return 1;
             }
