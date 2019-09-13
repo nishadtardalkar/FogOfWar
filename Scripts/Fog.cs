@@ -19,6 +19,7 @@ public class Fog : MonoBehaviour
     [Range(0, 12)]
     public int PastTexCount = 12;
     public float Radius = 3;
+    public bool KeepUnfoged;
 
     private RenderTexture cookieMask, cookieBlurred, cookieMask_i;
     private Projector projector;
@@ -55,6 +56,7 @@ public class Fog : MonoBehaviour
             projectorSize = projector.orthographicSize * 2;
         }
         CookieCreator.SetTexture("_RecurringCookie", cookieMask_i);
+        CookieCreator.SetInt("_KeepUnfoged", (KeepUnfoged) ? (1) : (0));
 
         data = new float[CastResolution * 2 + 3];
         data[0] = CastResolution;
@@ -90,7 +92,7 @@ public class Fog : MonoBehaviour
             data[1] = (castPoint.x - transform.position.x) / projectorSize + 0.5f;
             data[2] = (castPoint.z - transform.position.z) / projectorSize + 0.5f;
             CookieCreator.SetFloatArray("_Data", data);
-            CookieCreator.SetFloat("_Index", c);
+            CookieCreator.SetInt("_Index", c);
             Graphics.Blit(null, cookieMask, CookieCreator);
             Graphics.Blit(cookieMask, cookieMask_i);
         }
