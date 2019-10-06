@@ -4,7 +4,7 @@ A plugin for Unity3D to add Fog of War to a game.
 <b>
 UPDATE 1.3 : <br>
 Added an option to keep the cleared area unfoged. <br>
-(Please test this and create an issue of you find any errors)
+(Please test this and create an issue if you find any errors)
 </b>
 <br> <br>
 <b>
